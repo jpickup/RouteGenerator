@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="test" xmlns="http://www.topografix.com/GPX/1/1">
+  <trk>
+    <trkseg>
+      <trkpt lat="45.9237" lon="6.8694"><ele>1035.0</ele></trkpt>
+      <trkpt lat="45.9241" lon="6.8699"><ele>1042.0</ele></trkpt>
+      <trkpt lat="45.9245" lon="6.8705"><ele>1051.0</ele></trkpt>
+      <trkpt lat="45.9248" lon="6.8710"><ele>1058.0</ele></trkpt>
+      <trkpt lat="45.9251" lon="6.8715"><ele>1063.0</ele></trkpt>
+      <trkpt lat="45.9254" lon="6.8719"><ele>1070.0</ele></trkpt>
+      <trkpt lat="45.9257" lon="6.8723"><ele>1078.0</ele></trkpt>
+      <trkpt lat="45.9260" lon="6.8727"><ele>1085.0</ele></trkpt>
+      <trkpt lat="45.9263" lon="6.8729"><ele>1091.0</ele></trkpt>
+      <trkpt lat="45.9265" lon="6.8731"><ele>1098.0</ele></trkpt>
+    </trkseg>
+  </trk>
+</gpx>
