@@ -21,10 +21,10 @@ public record Route(List<Waypoint> waypoints) {
     }
 
     public Waypoint first() {
-        return waypoints.get(0);
+        return waypoints.getFirst();
     }
 
     public Waypoint last() {
-        return waypoints.get(waypoints.size() - 1);
+        return waypoints.getLast();
     }
 }

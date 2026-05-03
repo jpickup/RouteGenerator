@@ -106,7 +106,7 @@ public class RouteGenerator {
             // Check connectivity: first segment is always allowed;
             // subsequent segments must connect within threshold
             if (!chosen.isEmpty()) {
-                Waypoint lastWp = chosen.get(chosen.size() - 1).route().last();
+                Waypoint lastWp = chosen.getLast().route().last();
                 Waypoint firstWp = segment.route().first();
                 if (!RouteMetrics.isWithinMeters(lastWp, firstWp, SEGMENT_JOIN_THRESHOLD_M)) {
                     continue;
@@ -164,10 +164,10 @@ public class RouteGenerator {
                 combined.addAll(waypoints);
             } else {
                 // Skip the first waypoint of this segment if it duplicates the last of the previous
-                Waypoint last = combined.get(combined.size() - 1);
+                Waypoint last = combined.getLast();
                 int startIndex = 0;
                 if (!waypoints.isEmpty()) {
-                    Waypoint first = waypoints.get(0);
+                    Waypoint first = waypoints.getFirst();
                     if (last.lat() == first.lat()
                             && last.lon() == first.lon()
                             && last.ele() == first.ele()) {

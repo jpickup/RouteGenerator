@@ -101,7 +101,7 @@ public class RouteMetrics {
         for (int i = 0; i < waypoints.size() - 1; i++) {
             double delta = waypoints.get(i + 1).ele() - waypoints.get(i).ele();
             if (delta < -ELEVATION_SMOOTHING_THRESHOLD_M) {
-                loss += -delta; // return as positive value
+                loss -= delta; // return as positive value
             }
         }
         return loss;
